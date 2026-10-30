@@ -166,14 +166,14 @@ size_t list_size(const List *list) {
 const char *list_error_to_string(ListErrorCode error) {
     switch (error) {
         case LIST_SUCCESS:
-            return "Успешно (LIST_SUCCESS)";
+            return "Success (LIST_SUCCESS)";
         case LIST_ERR_INVALID_ARGUMENT:
-            return "Некорректный аргумент (LIST_ERR_INVALID_ARGUMENT)";
+            return "Invalid argument (LIST_ERR_INVALID_ARGUMENT)";
         case LIST_ERR_NO_MEMORY:
-            return "Недостаточно памяти (LIST_ERR_NO_MEMORY)";
+            return "Out of memory (LIST_ERR_NO_MEMORY)";
         case LIST_ERR_NOT_FOUND:
-            return "Элемент не найден (LIST_ERR_NOT_FOUND)";
+            return "Element not found (LIST_ERR_NOT_FOUND)";
         default:
-            return "Неизвестная ошибка";
+            return "Unknown error";
     }
 }
